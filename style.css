@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #ea69c8;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 650px; 
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e4de84;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4caf50; 
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .balance-overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .balance-overview div {
+    width: 32%;
+    text-align: center;
+    padding: 25px; 
+    background-color: #e3f2fd;
+    color: #1976d2;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .balance-overview div.income {
+    background-color: #e8f5e9; 
+    color: #388e3c; 
+  }
+  
+  .balance-overview div.expense {
+    background-color: #ffebee; 
+    color: #d32f2f; 
+  }
+  
+  .input-form {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 20px;
+  }
+  
+  .input-form input,
+  .input-form select,
+  .input-form button {
+    width: 100%; 
+    padding: 15px;
+    margin-bottom: 15px; 
+    font-size: 1.1rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .input-form select {
+    background-color: #e3f2fd; 
+  }
+  
+  .input-form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-form button:hover {
+    background-color: #388e3c;
+  }
+  
+  #entries-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #entries-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  #entries-list li.income-entry {
+    background-color: #e8f5e9; 
+    color: #388e3c;
+  }
+  
+  #entries-list li.expense-entry {
+    background-color: #ffebee; 
+    color: #d32f2f;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .filters label {
+    margin-right: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .filters input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .balance-overview div {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  
